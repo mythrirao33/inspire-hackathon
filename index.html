@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Resume Analyzer with Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">AI Resume Analyzer</h1>
+        <div class="form-group">
+            <label for="resumeText">Resume Text:</label>
+            <textarea id="resumeText" rows="6" placeholder="Paste your resume text here..."></textarea>
+        </div>
+        <button id="analyzeBtn" class="btn">Analyze Resume</button>
+        
+        <div id="result" class="result hidden">
+            <h2>Analysis Result:</h2>
+            <p id="similarityScore">Similarity Score: </p>
+            <p id="feedback">Feedback: </p>
+        </div>
+        
+        <!-- Chatbot Section -->
+        <div id="chatbot" class="chatbot">
+            <div class="chatbox">
+                <div id="chatOutput" class="chat-output"></div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Ask me anything..." />
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
